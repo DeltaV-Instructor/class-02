@@ -26,24 +26,26 @@ function questionOne(){
 }
 questionOne();
 
+function questionTwo(){
+  let userAnswer2 = prompt('Do I want to be a professional Basketball Player? Please respond with yes or no!');
 
+  // console.log(userAnswer2);
 
-let userAnswer2 = prompt('Do I want to be a professional Basketball Player? Please respond with yes or no!');
+  let cleanUserAnswer2 = userAnswer2.trim().toLowerCase();
 
-// console.log(userAnswer2);
+  console.log('Clean Input: ', cleanUserAnswer2);
 
-let cleanUserAnswer2 = userAnswer2.trim().toLowerCase();
-
-console.log('Clean Input: ', cleanUserAnswer2);
-
-if (cleanUserAnswer2 === 'yes' || cleanUserAnswer2 === 'y') {
-  // console.log('You Are Wrong!');
-  alert('Wrong');
-} else {
-  // console.log('You Are Correct!');
-  alert('you are right!');
-  points = points + 1;
+  if (cleanUserAnswer2 === 'yes' || cleanUserAnswer2 === 'y') {
+    // console.log('You Are Wrong!');
+    alert('Wrong');
+  } else {
+    // console.log('You Are Correct!');
+    alert('you are right!');
+    points = points + 1;
+  }
 }
+questionTwo();
+
 
 
 
