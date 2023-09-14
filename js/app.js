@@ -5,22 +5,26 @@ console.log('connected!');
 let points = 0;
 console.log('Users Points: ' + points);
 
-let userAnswer1 = prompt('Am I under the age of 25? Please respond with yes or no!');
 
-// console.log(userAnswer1);
+function questionOne(){
+  let userAnswer1 = prompt('Am I under the age of 25? Please respond with yes or no!');
 
-let cleanUserAnswer1 = userAnswer1.trim().toLowerCase();
+  // console.log(userAnswer1);
 
-console.log('Clean Input: ', cleanUserAnswer1);
+  let cleanUserAnswer1 = userAnswer1.trim().toLowerCase();
 
-if (cleanUserAnswer1 === 'yes' || cleanUserAnswer1 === 'y') {
+  console.log('Clean Input: ', cleanUserAnswer1);
+
+  if (cleanUserAnswer1 === 'yes' || cleanUserAnswer1 === 'y') {
   // console.log('You Are Correct!');
-  alert('you are right!');
-  points = points + 1;
-} else {
+    alert('you are right!');
+    points = points + 1;
+  } else {
   // console.log('You Are Wrong!');
-  alert('Wrong');
+    alert('Wrong');
+  }
 }
+questionOne();
 
 
 
